@@ -1,0 +1,8 @@
+# Database Configuration Template
+# Rename this file to config.py and update with your local credentials
+
+DB_HOST = "localhost"
+DB_PORT = "5432"
+DB_NAME = "postgres"
+DB_USER = "postgres"
+DB_PASSWORD = "postgres"

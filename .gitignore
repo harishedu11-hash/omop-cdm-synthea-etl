@@ -1,0 +1,11 @@
+# Ignore huge raw data and downloaded vocabularies
+*.csv
+*.zip
+vocabulary_download_v5_*/
+synthea_sample_data_csv_*/
+
+# Ignore passwords & virtual envs
+config.py
+.env
+__pycache__/
+*.pyc
