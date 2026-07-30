@@ -2,7 +2,7 @@
 
 An end-to-end Healthcare Data Engineering and Health Informatics repository converting raw synthetic EHR data (**Synthea**) into the standardized **OHDSI OMOP Common Data Model (v5.4)** using **PostgreSQL**, **Python**, and **Athena Vocabularies**. 
 
-Includes downstream applications for **Cardiometabolic Machine Learning Feature Extraction** (aligned with CRIS/SIMFONI Singapore) and **OHDSI Atlas-style Clinical Cohort Phenotyping**.
+Includes downstream applications for **Cardiometabolic Machine Learning Feature Extraction** (aimed at training AI foundation models) and **OHDSI Atlas-style Clinical Cohort Phenotyping**.
 
 ---
 
@@ -31,9 +31,9 @@ flowchart TD
 * **Clinical Domains Standardized:** `PERSON`, `OBSERVATION_PERIOD`, `VISIT_OCCURRENCE`, `CONDITION_OCCURRENCE`, `DRUG_EXPOSURE`, and `MEASUREMENT`.
 * **Terminology Mapping:** Mapped raw clinical values dynamically to **SNOMED CT**, **RxNorm**, and **LOINC**.
 
-### Module 2: Cardiometabolic ML Feature Store (CRIS/SIMFONI Aligned)
-* Extracted normalized, tabular patient feature matrices (`cardiometabolic_ml_cohort.csv`) tailored for AI foundation models predicting 3-year diabetic complications (CKD, Hypertension, Hyperlipidemia).
-* Captures multi-ethnic demographics, HbA1c lab trajectories, and medication exposure flags.
+### Module 2: Cardiometabolic ML Feature Store
+* Extracted normalized, tabular patient feature matrices (`cardiometabolic_ml_cohort.csv`) tailored for clinical AI models predicting 3-year diabetic complications (CKD, Hypertension, Hyperlipidemia).
+* Captures demographic traits, HbA1c lab trajectories, and medication exposure flags.
 
 ### Module 3: OHDSI Phenotype & Cohort Definition Engine
 * Implemented reproducible OHDSI Atlas-style cohort logic storing cohort definitions in `omop_cdm.cohort_definition` and `omop_cdm.cohort`.
